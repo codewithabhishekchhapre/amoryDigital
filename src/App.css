@@ -1,0 +1,62 @@
+/* Customize scrollbar */
+::-webkit-scrollbar {
+     width: 2px; /* Adjust width */
+   }
+   
+   ::-webkit-scrollbar-track {
+     background: #0a0c12; /* Track color */
+   }
+   
+   ::-webkit-scrollbar-thumb {
+     background: #1d2333; /* Scrollbar thumb color */
+     border-radius: 6px;
+   }
+   
+   ::-webkit-scrollbar-thumb:hover {
+     background: #264252; /* Hover effect */
+   }
+   
+
+
+   @font-face {
+     font-family: 'PP Neue Machina';
+     src: url('/src/assets/fonts/PPNeueMachina-PlainRegular.otf') format('opentype');
+     font-weight: normal;
+     font-style: normal;
+   }
+   
+   @font-face {
+     font-family: 'PP Neue Machina';
+     src: url('/src/assets/fonts/PPNeueMachina-PlainLight.otf') format('opentype');
+     font-weight: 300;
+     font-style: normal;
+   }
+   
+   @font-face {
+     font-family: 'PP Neue Machina';
+     src: url('/src/assets/fonts/PPNeueMachina-PlainUltrabold.otf') format('opentype');
+     font-weight: 800;
+     font-style: normal;
+   }
+   
+   @font-face {
+     font-family: 'PP Neue Machina';
+     src: url('/src/assets/fonts/PPNeueMachina-InktrapRegular.otf') format('opentype');
+     font-weight: normal;
+     font-style: normal;
+   }
+   
+   @font-face {
+     font-family: 'PP Neue Machina';
+     src: url('/src/assets/fonts/PPNeueMachina-InktrapLight.otf') format('opentype');
+     font-weight: 300;
+     font-style: normal;
+   }
+   
+   @font-face {
+     font-family: 'PP Neue Machina';
+     src: url('/src/assets/fonts/PPNeueMachina-InktrapUltrabold.otf') format('opentype');
+     font-weight: 800;
+     font-style: normal;
+   }
+   

@@ -4,10 +4,10 @@ import { AiOutlineThunderbolt } from "react-icons/ai";
 function AdSpendCalculator() {
   return (
     <>
-      <div className="py-20">
+      <div className="py-20 font-neueMachina ">
         <div className=" py-10 mb-10">
           <h1 className="md:text-6xl text-4xl mb-8 font-medium leading-normal">
-            How much to <span className="italic font-normal">Spend</span> <br /> to <span className="italic font-normal bg-gradient-to-r from-[#0A0C13] to-[#ffffff7e]">Scale</span> profitably
+            How much to <span className="italic font-normal">Spend</span> <br /> to <span className="italic font-normal bg-gradient-to-r px-2 from-[#0A0C13] to-[#ffffff7e]">Scale</span> profitably
           </h1>
           <div className=" py-10">
             <form className="mb-12">

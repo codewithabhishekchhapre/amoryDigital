@@ -5,7 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      neueMachina: ['PP Neue Machina', 'sans-serif'],
+    },
   },
   plugins: [],
 }

@@ -4,9 +4,9 @@ import { AiOutlineThunderbolt } from "react-icons/ai";
 function Footer() {
   return (
     <>
-      <footer className="py-10">
+      <footer className="py-10 bg-[url('/src/assets/hero-bg-3.png')] font-neueMachina bg-cover bg-no-repeat bg-center">
         <h1 className="text-5xl text-end mb-8 font-medium leading-normal">
-          <span className="italic font-normal bg-gradient-to-r from-[#0A0C13] to-[#ffffff7e]">Interested?</span> Let's <br /> get in touch now
+          <span className="italic font-normal bg-gradient-to-r from-[#0A0C13] to-[#ffffff7e] px-2">Interested?</span> Let's <br /> get in touch now
         </h1>
         <div className="border-b border-zinc-700 py-10">
           <form className="mb-12">
