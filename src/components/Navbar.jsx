@@ -4,6 +4,7 @@ import { BsLightningFill } from "react-icons/bs";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; // Menu Icons
 import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import logo from "../assets/DarkI.png"
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false); // State for mobile menu
@@ -17,11 +18,18 @@ function Navbar() {
 
   return (
     <>
+    <div onClick={()=>{navigate("/adSpendCalculator")}} className=" cursor-pointer z-50 font-neueMachina px-5 py-5 text-white rounded-lg bg-gray-800 fixed bottom-10 right-[20%] md:bottom-10 md:right-4">
+    <p className="font-bold  text-center text-lg">Book a <br className="hidden md:block"/>strategy call</p>
+    </div>
+    <header className="h-12 z-40 sticky top-0 flex justify-center items-center rounded-lg w-full text-center bg-slate-900 font-neueMachina text-white">
+      <p><strong className="font-bold text-yellow-500">Introductory offer </strong>- 3 months of Google Ads management for the price of 1</p>
+    </header>
       <nav className="py-5 px-6 flex items-center justify-between font-neueMachina text-white">
         {/* Logo */}
-        <div className="flex items-center">
-          <h1 className="font-bold flex items-center gap-1 text-xl">
-            <BsLightningFill className="text-yellow-400" />
+        <div className="flex items-center cursor-pointer" onClick={()=>{navigate("/")}}>
+          <h1  className="font-bold flex items-center gap-1 text-xl">
+            <img src={logo} alt="" className="h-8 w-8 rounded-full" />
+            {/* <BsLightningFill className="text-yellow-400" /> */}
             AmoryDigital
           </h1>
         </div>

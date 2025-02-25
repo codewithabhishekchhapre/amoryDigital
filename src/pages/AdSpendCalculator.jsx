@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineThunderbolt } from "react-icons/ai";
+import CaptchaButton from '../components/CaptchaButton'
 
 function AdSpendCalculator() {
   const [formData, setFormData] = useState({
@@ -16,7 +17,7 @@ function AdSpendCalculator() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [revenue, setRevenue] = useState(0);
-
+const [captchaVerified, setCaptchaVerified] = useState(false); // State for CAPTCHA
   const options = ["Tutoring", "Vet", "Waste Collection", "Tree Surgeon"];
 
   // Handle input changes
@@ -45,7 +46,12 @@ function AdSpendCalculator() {
 
     setRevenue(result.toFixed(2)); // Format to 2 decimal places
   };
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (captchaVerified) {
+      setIsModalOpen(true);
+    }
+  };
   return (
     <>
       <div className="py-20 font-neueMachina">
@@ -132,15 +138,20 @@ function AdSpendCalculator() {
           </form>
 
           {/* Button to open modal */}
-          <div className="justify-self-end flex sm:flex-row flex-col gap-10">
-            <div
-              className="flex items-center bg-white text-gray-600 py-5 px-8 space-x-2 rounded-xl cursor-pointer"
-              onClick={() => setIsModalOpen(true)}
-            >
-              <AiOutlineThunderbolt className="-rotate-12 font-bold" />
-              <p className="font-bold">Book a strategy call</p>
+          <div className="flex flex-col sm:flex-row gap-6 mt-6 items-start sm:items-center">
+              <CaptchaButton setCaptchaVerified={setCaptchaVerified} />
+              <button
+                type="submit"
+                className={`flex items-center py-4 px-6 sm:py-5 sm:px-8 space-x-2 rounded-xl ${
+                  captchaVerified ? "bg-white text-gray-600 cursor-pointer" : "bg-gray-500 text-gray-300 cursor-not-allowed"
+                }`}
+                disabled={!captchaVerified}
+                onClick={(e)=>{handleSubmit(e)}}
+              >
+                <AiOutlineThunderbolt className="-rotate-12 font-bold" />
+                <p className="font-bold text-sm sm:text-base">Book a strategy call</p>
+              </button>
             </div>
-          </div>
         </div>
 
         {/* Revenue Calculation Section */}
