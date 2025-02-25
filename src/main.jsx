@@ -8,8 +8,8 @@ import AdSpendCalculator from './pages/AdSpendCalculator.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='' element={<App/>}>
-      <Route path='/' element={<Landing/>}/>
+    <Route path='/' element={<App/>}>
+      <Route index element={<Landing/>}/>
       <Route path='/adSpendCalculator' element={<AdSpendCalculator/>}/>
     </Route>
   )
