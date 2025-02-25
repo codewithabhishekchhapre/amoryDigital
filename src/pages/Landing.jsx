@@ -112,7 +112,7 @@ function Landing() {
           <div className="bg-gradient-to-tr from-[#403124] to-60% to-[#0a0c12] rounded-lg p-6 shadow-lg ">
             <div className="flex justify-between items-center">
               <h3 className="text-xl font-neueMachina font-semibold text-white">Starter</h3>
-              <span className="bg-[#452125] text-sm text-[#963639] border border-[#b64c50] font-neueMachina font-normal px-3 py-1  rounded-full">Out of stock</span>
+              <span className="bg-[#452125] text-sm text-[#963639] border border-[#b64c50] font-neueMachina font-normal px-3 py-1  rounded-full">start package</span>
             </div>
             <p className='font-neueMachina text-sm mt-4 text-gray-500'>Ideal for upcoming founders and startups.</p>
             <p className="text-3xl font-bold my-4 font-neueMachina text-white">
