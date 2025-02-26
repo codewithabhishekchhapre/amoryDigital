@@ -25,7 +25,7 @@ function Landing() {
         "Our team implements high-impact strategies, continuously optimizing for maximum growth and profitability.",
     },
     {
-      id: 4,
+      id:4,
       title: "Scale & Repeat",
       description:
         "As your business expands, we refine and scale your strategy to ensure sustained success.",
@@ -83,8 +83,8 @@ function Landing() {
     {steps.map((step) => (
       <div key={step.id} className="p-6  shadow-lg flex items-start space-x-4 rounded-lg ">
         {/* Step Number */}
-        <div className="flex items-center justify-center h-10 w-10 text-lg rounded-lg border border-gray-500 text-white font-bold">
-          {step.id}
+        <div className="flex items-center justify-center px-3 py-2 rounded-lg border border-gray-500 text-white ">
+          <h4>{step.id}</h4>
         </div>
         {/* Step Content */}
         <div>

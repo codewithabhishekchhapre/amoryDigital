@@ -21,14 +21,14 @@ function Navbar() {
     <div onClick={()=>{navigate("/adSpendCalculator")}} className=" cursor-pointer z-50 font-neueMachina px-5 py-5 text-white rounded-lg bg-gray-800 fixed bottom-10 right-[20%] md:bottom-10 md:right-4">
     <p className="font-bold  text-center text-lg">Book a <br className="hidden md:block"/>strategy call</p>
     </div>
-    <header className="h-12 z-40 sticky top-0 flex justify-center items-center rounded-lg w-full text-center bg-slate-900 font-neueMachina text-white">
-      <p><strong className="font-bold text-yellow-500">Introductory offer </strong>- 3 months of Google Ads management for the price of 1</p>
+    <header className=" z-40 sticky top-0 flex px-2 py-3 md:py-2 justify-center items-center rounded-lg w-full text-center bg-slate-900 font-neueMachina text-white">
+      <p className=" text-normal md:text-base"><strong className="font-bold text-yellow-500">Introductory offer </strong>- 3 months of Google Ads management for the price of 1</p>
     </header>
       <nav className="py-5 px-6 flex items-center justify-between font-neueMachina text-white">
         {/* Logo */}
-        <div className="flex items-center cursor-pointer" onClick={()=>{navigate("/")}}>
-          <h1  className="font-bold flex items-center gap-1 text-xl">
-            <img src={logo} alt="" className="h-8 w-8 rounded-full" />
+        <div className="flex gap-3 items-center justify-center cursor-pointer" onClick={()=>{navigate("/")}}>
+            <img src={logo} alt="" className=" h-6 w-6 md:h-8 md:w-8 rounded-full" />
+          <h1  className="font-bold text-base md:text-xl">
             {/* <BsLightningFill className="text-yellow-400" /> */}
             AmoryDigital
           </h1>
@@ -57,7 +57,7 @@ function Navbar() {
       </nav>
 
        {/* Mobile Sidebar */}
-       <div className={`fixed top-0 right-0 w-64 h-full bg-black shadow-lg transform ${isOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 p-5`}>
+       <div className={`fixed top-0 right-0 z-50 w-64 h-full bg-black shadow-lg transform ${isOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 p-5`}>
         {/* Close Button */}
         <button className="absolute top-4 right-4 text-2xl" onClick={() => setIsOpen(false)}>
           <AiOutlineClose />
