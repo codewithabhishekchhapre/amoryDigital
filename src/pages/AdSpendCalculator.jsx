@@ -57,7 +57,7 @@ const [captchaVerified, setCaptchaVerified] = useState(false); // State for CAPT
       <div className="py-20 font-neueMachina">
         <h1 className="md:text-6xl text-4xl mb-8 font-medium leading-normal">
           How much to <span className="italic font-normal">Spend</span> <br /> to{" "}
-          <span className="italic font-normal bg-gradient-to-r px-2 from-[#0A0C13] to-[#ffffff7e]">
+          <span className="italic font-normal bg-gradient-to-r from-[#0A0C13] to-[#8483837e] px-2">
             Scale
           </span>{" "}
           profitably

@@ -39,7 +39,7 @@ function Landing() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-neueMachina font-semibold leading-tight">
             We <span className="text-primary">Grow Brands</span> and{" "}
             <span className="font-extrabold">
-              <span className="italic font-neueMachina font-normal bg-gradient-to-r from-[#0A0C13] to-[#ffffff7e] px-2">
+              <span className="italic font-neueMachina font-normal bg-gradient-to-r from-[#0a0c1356] to-[#9b9a9a7e] px-2">
                 maximize
               </span>{" "}
               Gains
@@ -102,7 +102,7 @@ function Landing() {
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-neueMachina font-bold">
             Growth-focused plans <br />
-            <span className="italic py-2 bg-gradient-to-r from-[#0A0C13] to-[#ffffff7e] px-3">designed</span> to <span className="italic text-gray-300">scale</span> with you.
+            <span className="italic py-2 bg-gradient-to-r from-[#0A0C13] to-[#6161617e] px-3">designed</span> to <span className="italic text-gray-300">scale</span> with you.
           </h2>
         </div>
 

@@ -31,7 +31,7 @@ function Footer() {
     <footer className="py-10 px-6 mt-4  bg-[url('/src/assets/hero-bg-3.png')] bg-cover bg-no-repeat bg-center text-white font-neueMachina">
      {/* Heading */}
      <h1 className="text-3xl sm:text-4xl md:text-5xl text-end mb-12 font-medium leading-normal px-4 sm:px-8">
-          <span className="italic font-normal bg-gradient-to-r from-[#0A0C13] to-[#ffffff7e] px-2">
+          <span className="italic font-normal bg-gradient-to-r from-[#0A0C13] to-[#8483837e] px-4 py-1">
             Interested?
           </span>{" "}
           Let's <br /> get in touch now
