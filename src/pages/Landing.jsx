@@ -68,8 +68,8 @@ function Landing() {
 
       <section className="text-white py-16 px-6 md:px-10 font-neueMachina">
   {/* Responsive Header Section */}
-  <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left mx-auto max-w-6xl">
-    <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold w-full md:w-[70%] leading-tight">
+  <div className="flex flex-col md:flex-row justify-center items-center text-center md:text-left mx-auto max-w-5xl">
+    <h2 className="text-3xl sm:text-4xl md:text-5xl text-center font-semibold w-full  leading-tight">
       <span className="italic text-gray-300 font-neueMachina">Scaling</span> your brand 
       doesn't have to be <span className="italic text-gray-400">complicated</span>.
     </h2>
@@ -112,7 +112,7 @@ function Landing() {
           <div className="bg-gradient-to-tr from-[#403124] to-60% to-[#0a0c12] rounded-lg p-6 shadow-lg ">
             <div className="flex justify-between items-center">
               <h3 className="text-xl font-neueMachina font-semibold text-white">Starter</h3>
-              <span className="bg-[#452125] text-sm text-[#963639] border border-[#b64c50] font-neueMachina font-normal px-3 py-1  rounded-full">Start package</span>
+              <span className="bg-[#452125] text-sm text-red-600 border border-red-600 font-neueMachina font-normal px-3 py-1  rounded-full">Start Package</span>
             </div>
             <p className='font-neueMachina text-sm mt-4 text-gray-500'>Ideal for upcoming founders and startups.</p>
             <p className="text-3xl font-bold my-4 font-neueMachina text-white">
@@ -141,8 +141,8 @@ function Landing() {
               <h3 className="text-xl font-semibold font-neueMachina">Entrepreneur</h3>
               <span className="bg-[#214826] text-sm font-neueMachina font-normal text-[#4db249] border border-[#4db249] px-3 py-1 rounded-full">Recommended</span>
             </div>
-            <p className='font-neueMachina text-sx mt-4 text-gray-500'>Perfect for established brands and businesses.</p>
-            <p className="text-3xl font-bold my-4 font-neueMachina">10% <span className="text-lg font-normal">/ commission fee</span></p>
+            <p className='font-neueMachina text-sm mt-4 text-gray-500'>Perfect for established brands and businesses.</p>
+            <p className="text-3xl font-bold my-4 font-neueMachina">10% <span className="text-lg font-normal text-gray-300">/ commission fee</span></p>
             <hr  className='border-gray-800'/>
             <div className="mt-6">
               <p className="text-gray-400 mb-4 font-neueMachina">Entrepreneur includes</p>

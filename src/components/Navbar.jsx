@@ -18,7 +18,7 @@ function Navbar() {
 
   return (
     <>
-    <div onClick={()=>{navigate("/adSpendCalculator")}} className=" cursor-pointer z-50 font-neueMachina px-5 py-5 text-white rounded-lg bg-gray-800 fixed bottom-10 right-[20%] md:bottom-10 md:right-4">
+    <div onClick={()=>{navigate("/adSpendCalculator")}} className=" cursor-pointer z-50 font-neueMachina px-8 py-5 text-white rounded-lg bg-gray-800 fixed bottom-2 right-[20%] md:bottom-10 md:right-4">
     <p className="font-bold  text-center text-lg">Book a <br className="hidden md:block"/>strategy call</p>
     </div>
     <header className=" z-40 sticky top-0 flex px-2 py-3 md:py-2 justify-center items-center rounded-lg w-full text-center bg-slate-900 font-neueMachina text-white">
@@ -37,13 +37,13 @@ function Navbar() {
         {/* Desktop Links */}
         <div className="hidden md:flex gap-10">
           <NavLink to="/" className="text-gray-400 hover:text-white">How it works</NavLink>
-          <NavLink to="/" className="text-gray-400 hover:text-white">Pricing</NavLink>
-          <NavLink to="/" className="text-gray-400 hover:text-white">About us</NavLink>
+          <NavLink to="/pricing" className="text-gray-400 hover:text-white">Pricing</NavLink>
+          <NavLink to="/aboutus" className="text-gray-400 hover:text-white">About us</NavLink>
           <NavLink to="/adSpendCalculator" className="text-gray-400 hover:text-white">Ad spend calculator</NavLink>
         </div>
 
         {/* CTA Button */}
-        <NavLink to="/" className="hidden md:flex items-center gap-2 border border-white rounded-xl py-2 px-6">
+        <NavLink to="/getstart" className="hidden md:flex items-center gap-2 border border-white rounded-xl py-2 px-6">
           Get started now <GoArrowRight className="text-xl" />
         </NavLink>
 
@@ -57,7 +57,7 @@ function Navbar() {
       </nav>
 
        {/* Mobile Sidebar */}
-       <div className={`fixed top-0 right-0 z-50 w-64 h-full bg-black shadow-lg transform ${isOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 p-5`}>
+       <div className={`fixed top-0 right-0 z-50 w-64 h-full bg-[#0a0c13] shadow-lg transform ${isOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 p-5`}>
         {/* Close Button */}
         <button className="absolute top-4 right-4 text-2xl" onClick={() => setIsOpen(false)}>
           <AiOutlineClose />
@@ -66,13 +66,13 @@ function Navbar() {
         {/* Mobile Links */}
         <div className="flex flex-col gap-6 mt-12">
           <button className="text-gray-400 hover:text-white" onClick={() => handleNavClick("/")}>How it works</button>
-          <button className="text-gray-400 hover:text-white" onClick={() => handleNavClick("/")}>Pricing</button>
-          <button className="text-gray-400 hover:text-white" onClick={() => handleNavClick("/")}>About us</button>
+          <button className="text-gray-400 hover:text-white" onClick={() => handleNavClick("/pricing")}>Pricing</button>
+          <button className="text-gray-400 hover:text-white" onClick={() => handleNavClick("/aboutus")}>About us</button>
           <button className="text-gray-400 hover:text-white" onClick={() => handleNavClick("/adSpendCalculator")}>Ad spend calculator</button>
         </div>
 
         {/* CTA Button */}
-        <button className="mt-10 flex items-center gap-2 border border-white rounded-xl py-2 px-6" onClick={() => handleNavClick("/")}>
+        <button className="mt-10 flex items-center gap-2 border border-white rounded-xl py-2 px-6" onClick={() => handleNavClick("/getstart")}>
           Get started now <GoArrowRight className="text-xl" />
         </button>
       </div>

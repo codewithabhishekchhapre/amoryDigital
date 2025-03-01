@@ -85,7 +85,7 @@ function Footer() {
           <label className="block mb-2 text-gray-400">When should we contact you?</label>
           <select
             id="contactYou"
-            className="w-full p-3 bg-gray-900 border border-gray-700 rounded-md"
+            className="w-full p-3 bg-gray-900 border text-gray-400 border-gray-700 rounded-md"
             value={formData.contactYou}
             onChange={handleChange}
           >
@@ -99,7 +99,7 @@ function Footer() {
           <label className="block mb-2 text-gray-400">Are you currently running Google Ads?</label>
           <select
             id="googleAds"
-            className="w-full p-3 bg-gray-900 border border-gray-700 rounded-md"
+            className="w-full p-3 bg-gray-900 border text-gray-400 border-gray-700 rounded-md"
             value={formData.googleAds}
             onChange={handleChange}
           >
@@ -137,8 +137,8 @@ function Footer() {
             <h2 className="text-xl sm:text-2xl font-bold mb-4">Form Preview</h2>
             <ul className="space-y-2 text-sm sm:text-lg">
               {Object.entries(formData).map(([key, value]) => (
-                <li key={key}>
-                  <strong>{key.replace(/([A-Z])/g, " $1")}:</strong> {value || "N/A"}
+                <li key={key} >
+                  <strong >{key.replace(/([A-Z])/g, " $1")}:</strong> {value || "N/A"}
                 </li>
               ))}
             </ul>
