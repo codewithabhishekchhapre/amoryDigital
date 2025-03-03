@@ -39,7 +39,7 @@ function Navbar() {
     setTimeout(() => {
       const section = document.getElementById(id);
       if (section) {
-        section.scrollIntoView({ behavior: "smooth", block: "center" });
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     }, 200);
   };
