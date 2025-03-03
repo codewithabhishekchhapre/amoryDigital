@@ -39,11 +39,16 @@ function Navbar() {
     setTimeout(() => {
       const section = document.getElementById(id);
       if (section) {
-        section.scrollIntoView({ behavior: "smooth", block: "start" });
+        const navbarHeight = document.querySelector("nav").offsetHeight; // Get Navbar height
+        const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+        
+        window.scrollTo({
+          top: sectionTop - navbarHeight - 20, // Adjust 20px for extra spacing
+          behavior: "smooth"
+        });
       }
     }, 200);
   };
-
 
   return (
     <>
