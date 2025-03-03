@@ -139,3 +139,4 @@ function AdSpendCalculator() {
   );
 }
 
+export default AdSpendCalculator;

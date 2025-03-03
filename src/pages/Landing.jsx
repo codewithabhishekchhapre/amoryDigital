@@ -33,7 +33,7 @@ function Landing() {
   ];
   return (
     <>
-      <div className="flex items-center justify-center h-[calc(100vh-100px)] bg-[url('/src/assets/hero-bg.png')] bg-cover bg-[0%_30%] bg-no-repeat text-foreground px-6 sm:px-4">
+      <div id='starting' className="flex items-center justify-center h-[calc(100vh-100px)] bg-[url('/src/assets/hero-bg.png')] bg-cover bg-[0%_30%] bg-no-repeat text-foreground px-6 sm:px-4">
         <div className="w-full max-w-4xl text-center gap-6 flex flex-col justify-center items-center">
           {/* Heading */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-neueMachina font-semibold leading-tight">
@@ -79,11 +79,11 @@ function Landing() {
   </div>
 
   {/* Responsive Grid Section */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12 max-w-6xl ">
+  <div  className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12 max-w-6xl ">
     {steps.map((step) => (
       <div key={step.id} className="p-6  shadow-lg flex items-start space-x-4 rounded-lg ">
         {/* Step Number */}
-        <div className="flex items-center justify-center px-3 py-2 rounded-lg border border-gray-500 text-white ">
+        <div  className="flex items-center justify-center px-3 py-2 rounded-lg border border-gray-500 text-white ">
           <h4>{step.id}</h4>
         </div>
         {/* Step Content */}
@@ -97,7 +97,7 @@ function Landing() {
 </section>
 
 
-      <div id='pricing' className=" text-white py-12 px-6 md:px-10 lg:px-20">
+      <div  id='pricing' className=" text-white py-12 px-6 md:px-10 lg:px-20">
         {/* Title Section */}
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-neueMachina font-bold">
@@ -107,12 +107,12 @@ function Landing() {
         </div>
 
         {/* Pricing Cards Container */}
-        <div  className=" grid grid-cols-1 md:grid-cols-2 gap-20 max-w-4xl mx-auto">
+        <div  className=" grid grid-cols-1 md:grid-cols-2 gap-20   max-w-4xl mx-auto">
           {/* Starter Plan */}
-          <div className="bg-gradient-to-tr from-[#403124] to-60% to-[#0a0c12] rounded-lg p-6 shadow-lg ">
+          <div className="bg-gradient-to-tr from-[#672b2b] to-60% to-[#0a0c12] rounded-lg p-6 shadow-lg ">
             <div className="flex justify-between items-center">
               <h3 className="text-xl font-neueMachina font-semibold text-white">Starter</h3>
-              <span className="bg-[#403124] text-sm text-[#ed882f] border border-[#b86014] font-neueMachina font-normal px-3 py-1  rounded-full">Start Package</span>
+              <span className="bg-[#8b23237f] text-sm text-[#ff2929] border border-[#fc1010] font-neueMachina font-normal px-3 py-1  rounded-full">Start Package</span>
             </div>
             <p className='font-neueMachina text-sm mt-4 text-gray-500'>Ideal for upcoming founders and startups.</p>
             <p className="text-3xl font-bold my-4 font-neueMachina text-white">
@@ -136,10 +136,10 @@ function Landing() {
           </div>
 
           {/* Entrepreneur Plan */}
-          <div className="bg-gradient-to-tl from-[#204224] to-60% to-[#0a0c12] rounded-lg p-6 shadow-lg ">
+          <div className="bg-gradient-to-tl from-[#65ef5e7d] to-60% to-[#0a0c12] rounded-lg p-6 shadow-lg ">
             <div className="flex justify-between items-center">
               <h3 className="text-xl font-semibold font-neueMachina">Entrepreneur</h3>
-              <span className="bg-[#214826] text-sm font-neueMachina font-normal text-[#4db249] border border-[#4db249] px-3 py-1 rounded-full">Recommended</span>
+              <span className="bg-[#214826] text-sm font-neueMachina font-normal text-[#65EF5E] border border-[#65EF5E] px-3 py-1 rounded-full">Recommended</span>
             </div>
             <p className='font-neueMachina text-sm mt-4 text-gray-500'>Perfect for established brands and businesses.</p>
             <p className="text-3xl font-bold my-4 font-neueMachina">10% <span className="text-lg font-normal text-gray-300">/ commission fee</span></p>
@@ -168,7 +168,7 @@ function Landing() {
       </div>
 
 
-      <div id="about-us" className="relative h-fit bg-[url('/src/assets/hero-bg-2.png')] font-neueMachina bg-cover bg-no-repeat bg-center text-white px-6 md:px-12 lg:px-24 py-16 md:py-24 flex flex-col justify-between lg:flex-row items-center">
+      <div  id="about-us" className="relative h-fit bg-[url('/src/assets/hero-bg-2.png')] font-neueMachina bg-cover bg-no-repeat bg-center text-white px-6 md:px-12 lg:px-24 py-16 md:py-24 flex flex-col justify-between lg:flex-row items-center">
       
       {/* Left Section (Text) */}
       <div className="relative w-full lg:w-1/2 z-10 text-center lg:text-left">
