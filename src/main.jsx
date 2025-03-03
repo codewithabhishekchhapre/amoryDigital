@@ -12,7 +12,7 @@ const router = createBrowserRouter(
     <Route path='/' element={<App/>}>
       <Route index element={<Landing/>}/>
       <Route path='/adSpendCalculator' element={<AdSpendCalculator/>}/>
-      <Route path='*' element={<NotFound/>}/>
+      {/* <Route path='*' element={<NotFound/>}/> */}
     </Route>
   )
 )

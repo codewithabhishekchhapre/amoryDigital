@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { GoArrowRight } from "react-icons/go";
 import { BsLightningFill } from "react-icons/bs";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; // Menu Icons
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/DarkI.png"
 
@@ -15,10 +15,15 @@ function Navbar() {
     setIsOpen(false); // Close sidebar
     navigate(path);   // Navigate to the selected path
   };
-
+  const handleScroll = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
   return (
     <>
-    <div onClick={()=>{navigate("/adSpendCalculator")}} className=" cursor-pointer z-50 font-neueMachina px-8 py-5 text-white rounded-lg bg-gray-800 fixed bottom-2 right-[20%] md:bottom-10 md:right-4">
+    <div onClick={()=>{navigate("/adSpendCalculator")}} className=" cursor-pointer z-50 font-neueMachina px-8 py-5 text-white rounded-lg bg-gray-800 fixed bottom-2 right-[20%] md:bottom-2 md:right-4">
     <p className="font-bold  text-center text-lg">Book a <br className="hidden md:block"/>strategy call</p>
     </div>
     <header className=" z-40 sticky top-0 flex px-2 py-3 md:py-2 justify-center items-center rounded-lg w-full text-center bg-slate-900 font-neueMachina text-white">
@@ -37,8 +42,15 @@ function Navbar() {
         {/* Desktop Links */}
         <div className="hidden md:flex gap-10">
           <NavLink to="/" className="text-gray-400 hover:text-white">How it works</NavLink>
-          <NavLink to="/pricing" className="text-gray-400 hover:text-white">Pricing</NavLink>
-          <NavLink to="/aboutus" className="text-gray-400 hover:text-white">About us</NavLink>
+          <button onClick={() => handleScroll("pricing")} className="text-gray-400 hover:text-white">
+  Pricing
+</button>
+          <button onClick={() => handleScroll("about-us")} className="text-gray-400 hover:text-white">
+  About Us
+</button>
+          {/* <NavLink to="/pricing" className="text-gray-400 hover:text-white">Pricing</NavLink> */}
+          {/* <Link to="pricing" className="text-gray-400 hover:text-white">Pricing</Link> */}
+          {/* <NavLink to="/aboutus" className="text-gray-400 hover:text-white">About us</NavLink> */}
           <NavLink to="/adSpendCalculator" className="text-gray-400 hover:text-white">Ad spend calculator</NavLink>
         </div>
 

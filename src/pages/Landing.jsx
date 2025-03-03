@@ -4,7 +4,7 @@ import { IoIosCheckboxOutline } from "react-icons/io";
 import { FaRegUserCircle } from "react-icons/fa";
 
 function Landing() {
-
+ 
   const steps = [
     {
       id: 1,
@@ -66,7 +66,7 @@ function Landing() {
         </div>
       </div>
 
-      <section className="text-white py-16 px-6 md:px-10 font-neueMachina">
+      <section className="text-white flex flex-col justify-center items-center py-16 px-6 md:px-10 font-neueMachina">
   {/* Responsive Header Section */}
   <div className="flex flex-col md:flex-row justify-center items-center text-center md:text-left mx-auto max-w-5xl">
     <h2 className="text-3xl sm:text-4xl md:text-5xl text-center font-semibold w-full  leading-tight">
@@ -97,7 +97,7 @@ function Landing() {
 </section>
 
 
-      <div className=" text-white py-12 px-6 md:px-10 lg:px-20">
+      <div id='pricing' className=" text-white py-12 px-6 md:px-10 lg:px-20">
         {/* Title Section */}
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-neueMachina font-bold">
@@ -107,12 +107,12 @@ function Landing() {
         </div>
 
         {/* Pricing Cards Container */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 max-w-4xl mx-auto">
+        <div  className=" grid grid-cols-1 md:grid-cols-2 gap-20 max-w-4xl mx-auto">
           {/* Starter Plan */}
           <div className="bg-gradient-to-tr from-[#403124] to-60% to-[#0a0c12] rounded-lg p-6 shadow-lg ">
             <div className="flex justify-between items-center">
               <h3 className="text-xl font-neueMachina font-semibold text-white">Starter</h3>
-              <span className="bg-[#452125] text-sm text-red-600 border border-red-600 font-neueMachina font-normal px-3 py-1  rounded-full">Start Package</span>
+              <span className="bg-[#403124] text-sm text-[#ed882f] border border-[#b86014] font-neueMachina font-normal px-3 py-1  rounded-full">Start Package</span>
             </div>
             <p className='font-neueMachina text-sm mt-4 text-gray-500'>Ideal for upcoming founders and startups.</p>
             <p className="text-3xl font-bold my-4 font-neueMachina text-white">
@@ -168,7 +168,7 @@ function Landing() {
       </div>
 
 
-      <div className="relative h-fit bg-[url('/src/assets/hero-bg-2.png')] font-neueMachina bg-cover bg-no-repeat bg-center text-white px-6 md:px-12 lg:px-24 py-16 md:py-24 flex flex-col justify-between lg:flex-row items-center">
+      <div id="about-us" className="relative h-fit bg-[url('/src/assets/hero-bg-2.png')] font-neueMachina bg-cover bg-no-repeat bg-center text-white px-6 md:px-12 lg:px-24 py-16 md:py-24 flex flex-col justify-between lg:flex-row items-center">
       
       {/* Left Section (Text) */}
       <div className="relative w-full lg:w-1/2 z-10 text-center lg:text-left">

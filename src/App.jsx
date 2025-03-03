@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div className="bg-[#0A0C13] md:px-32 sm:px-20 px-5 text-white">
+      <div className="bg-[#0A0C13]  text-white scroll-smooth">
         <Navbar />
           <Outlet />
         <Footer />
