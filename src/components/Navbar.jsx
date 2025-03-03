@@ -29,7 +29,7 @@ function Navbar() {
     <header className=" z-40 sticky top-0 flex px-2 py-3 md:py-2 justify-center items-center rounded-lg w-full text-center bg-slate-900 font-neueMachina text-white">
       <p className=" text-normal md:text-base"><strong className="font-bold text-yellow-500">Introductory offer </strong>- 3 months of Google Ads management for the price of 1</p>
     </header>
-      <nav className="py-5 px-6 flex items-center justify-between font-neueMachina text-white">
+      <nav className="py-5 px-14 flex items-center justify-between font-neueMachina text-white">
         {/* Logo */}
         <div className="flex gap-3 items-center justify-center cursor-pointer" onClick={()=>{navigate("/")}}>
             <img src={logo} alt="" className=" h-6 w-6 md:h-8 md:w-8 rounded-full" />
