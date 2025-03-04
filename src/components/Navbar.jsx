@@ -81,7 +81,7 @@ function Navbar() {
         </div>
 
         {/* CTA Button */}
-        <NavLink to="/" className="hidden md:flex items-center gap-2 border border-white rounded-xl py-2 px-6">
+        <NavLink to="/adSpendCalculator" className="hidden md:flex items-center gap-2 border border-white rounded-xl py-2 px-6">
           Get started now <GoArrowRight className="text-xl" />
         </NavLink>
 

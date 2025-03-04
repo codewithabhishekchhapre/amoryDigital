@@ -2,9 +2,10 @@ import React from 'react'
 import { FaRegCircleDot } from "react-icons/fa6";
 import { IoIosCheckboxOutline } from "react-icons/io";
 import { FaRegUserCircle } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 function Landing() {
- 
+ const navigate = useNavigate(); // useNavigate Hook
   const steps = [
     {
       id: 1,
@@ -55,7 +56,7 @@ function Landing() {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
-            <button className="bg-white text-black hover:bg-gray-200 py-2 px-6 rounded-lg font-neueMachina font-medium">
+            <button onClick={()=>{navigate("/adSpendCalculator")}} className="bg-white text-black hover:bg-gray-200 py-2 px-6 rounded-lg font-neueMachina font-medium">
               ⚡ Book a strategy call
             </button>
             <button className="text-muted-foreground font-neueMachina font-medium">
@@ -73,7 +74,7 @@ function Landing() {
       <span className="italic text-gray-300 font-neueMachina">Scaling</span> your brand 
       doesn't have to be <span className="italic text-gray-400">complicated</span>.
     </h2>
-    <button className="mt-6 md:mt-0 px-6 py-3 bg-white text-black font-neueMachina font-medium rounded-xl shadow-lg transition hover:scale-105">
+    <button onClick={()=>{navigate("/adSpendCalculator")}}  className="mt-6 md:mt-0 px-6 py-3 bg-white text-black font-neueMachina font-medium rounded-xl shadow-lg transition hover:scale-105">
       ⚡ Book a strategy call
     </button>
   </div>
@@ -112,7 +113,7 @@ function Landing() {
           <div className="bg-gradient-to-tr from-[#672b2b] to-60% to-[#0a0c12] rounded-lg p-6 shadow-lg ">
             <div className="flex justify-between items-center">
               <h3 className="text-xl font-neueMachina font-semibold text-white">Starter</h3>
-              <span className="bg-[#8b23237f] text-sm text-[#ff2929] border border-[#fc1010] font-neueMachina font-normal px-3 py-1  rounded-full">Start Package</span>
+              <span className="bg-[#8b23237f] text-sm text-[#ff2929] border border-[#fc1010] font-neueMachina font-normal px-3 py-1  rounded-full">Out of Stock</span>
             </div>
             <p className='font-neueMachina text-sm mt-4 text-gray-500'>Ideal for upcoming founders and startups.</p>
             <p className="text-3xl font-bold my-4 font-neueMachina text-white">
@@ -130,7 +131,7 @@ function Landing() {
               </ul>
             </div>
 
-            <button className="w-full mt-6 py-3 bg-gray-700 text-gray-400 font-neueMachina rounded-lg cursor-not-allowed">
+            <button onClick={()=>{navigate("/adSpendCalculator")}} className="w-full mt-6 py-3 bg-gray-700 text-gray-400 font-neueMachina rounded-lg cursor-not-allowed">
               Book a strategy call ⚡
             </button>
           </div>
@@ -155,7 +156,7 @@ function Landing() {
               </ul>
             </div>
 
-            <button className="w-full mt-6 py-3 bg-white text-black font-neueMachina font-semibold rounded-lg">
+            <button onClick={()=>{navigate("/adSpendCalculator")}} className="w-full mt-6 py-3 bg-white text-black font-neueMachina font-semibold rounded-lg">
               Book a strategy call ⚡
             </button>
           </div>
