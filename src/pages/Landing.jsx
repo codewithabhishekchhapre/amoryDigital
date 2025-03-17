@@ -32,6 +32,27 @@ function Landing() {
         "As your business expands, we refine and scale your strategy to ensure sustained success.",
     },
   ];
+
+  const starterFeatures = [
+    "Starter feature Bullet point 1",
+    "Starter feature Bullet point 2",
+    "Starter feature Bullet point 3",
+    "Starter feature Bullet point 4",
+    "Starter feature Bullet point 5",
+    "Starter feature Bullet point 6",
+  ];
+  
+  const entrepreneurFeatures = [
+    "Entrepreneur feature Bullet point 1",
+    "Entrepreneur feature Bullet point 2",
+    "Entrepreneur feature Bullet point 3",
+    "Entrepreneur feature Bullet point 4",
+    "Entrepreneur feature Bullet point 5",
+    "Entrepreneur feature Bullet point 6",
+  ];
+  
+  
+  
   return (
     <>
       <div id='starting' className="flex items-center justify-center h-[calc(100vh-100px)] bg-[url('/src/assets/hero-bg.png')] bg-cover bg-[0%_30%] bg-no-repeat text-foreground px-6 sm:px-4">
@@ -123,11 +144,11 @@ function Landing() {
             <div className="mt-6">
               <p className="text-gray-400 mb-4 font-neueMachina">Entrepreneur includes</p>
               <ul className="space-y-2 text-left">
-                {[...Array(6)].map((_, i) => (
-                  <li key={i} className="flex items-center gap-2 font-neueMachina text-gray-100">
-                    <IoIosCheckboxOutline className='text-[#5ec5f5]' />  Dedicated 1:1 live strategy calls
-                  </li>
-                ))}
+              {starterFeatures.map((feature, i) => (
+            <li key={i} className="flex items-center gap-2 font-neueMachina text-gray-100">
+              <IoIosCheckboxOutline className="text-[#5ec5f5]" /> {feature}
+            </li>
+          ))}
               </ul>
             </div>
 
@@ -148,11 +169,11 @@ function Landing() {
             <div className="mt-6">
               <p className="text-gray-400 mb-4 font-neueMachina">Entrepreneur includes</p>
               <ul className="space-y-2 text-left">
-                {[...Array(6)].map((_, i) => (
-                  <li key={i} className="flex items-center gap-2 font-neueMachina text-gray-100">
-                  <IoIosCheckboxOutline className='text-[#5ec5f5]' />  Dedicated 1:1 live strategy calls
-                </li>
-                ))}
+              {entrepreneurFeatures.map((feature, i) => (
+            <li key={i} className="flex items-center gap-2 font-neueMachina text-gray-100">
+              <IoIosCheckboxOutline className="text-[#5ec5f5]" /> {feature}
+            </li>
+          ))}
               </ul>
             </div>
 
