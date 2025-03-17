@@ -1,9 +1,10 @@
 import React from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 
-const CaptchaButton = ({ setCaptchaVerified }) => {
+const CaptchaButton = ({ setCaptchaVerified, setCaptchaResponse }) => {
   const handleCaptchaChange = (value) => {
     if (value) {
+      setCaptchaResponse(value); // Save the CAPTCHA response token
       setCaptchaVerified(true);
     }
   };
